@@ -20,6 +20,13 @@ module.exports = () => {
         template: './index.html',
         title: 'SNIP-IT',
       }),
+
+      // inject service worker into webpack bundle
+      new InjectManifest({
+        swSrc: './src-sw.js',
+        swDest: 'src-sw.js',
+      }),
+
       // manifest 
       new WebpackPwaManifest({
         fingerprints: false,
