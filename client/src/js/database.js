@@ -27,7 +27,7 @@ export const putDb = async (content) => {
   const request = store.put({ id: 1, jate: content })
   // wait for saved data
   const result = await request;
-  console.log('⭐ yay! your data has saved to the data base!! ⭐')
+  console.log('⭐ yay! your data has saved to the database!! ⭐')
 }; 
 
 
