@@ -27,14 +27,14 @@ export const putDb = async (content) => {
   const request = store.put({ id: 1, jate: content })
   // wait for saved data
   const result = await request;
-  console.log('⭐ yay! your data has saved to the database!! ⭐')
+  console.log('⭐ yay! your data has saved to the database!! ⭐', result);
 }; 
 
 
 
 // TODO: Add logic for a method that gets all the content from the database
 export const getDb = async () => {
-console.log('👁️‍🗨️ Get all from the database in progress')
+console.log('👁️‍🗨️ Get all from the database in progress');
 
 // create a new connection to the db
 const jateDb = await openDB('jate', 1);
@@ -43,7 +43,7 @@ const transaction = jateDb.transaction('jate', 'readonly');
 // open the database object
 const store = transaction.objectStore('jate');
 // get the data from the object
-const request = store.getAll();
+const request = store.get(1);
 // wait for the data to be returned
 const result = await request;
 console.log('🛸 Data Retrieved', result);
@@ -52,3 +52,4 @@ return result;
 };
 
 initdb();
+

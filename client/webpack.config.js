@@ -33,8 +33,11 @@ module.exports = () => {
         inject: true,
         name: 'SNIP-IT with JATE',
         description: 'code snip / text editor app that maintains functionality when offline',
+        short_name: 'J.A.T.E.',
         start_url: '/',
         publicPath: '/',
+        background_color: '#31a9e1',
+        theme_color: '#31a9e1',
         icons: [
           {
             src: path.resolve('src/images/logo.png'),
