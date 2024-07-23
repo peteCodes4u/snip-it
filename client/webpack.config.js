@@ -18,7 +18,7 @@ module.exports = () => {
       // TODO: Add and configure workbox plugins for a service worker and manifest file.
       new HtmlWebpackPlugin({
         template: './index.html',
-        title: 'SNIP-IT',
+        title: 'JATE',
       }),
 
       // inject service worker into webpack bundle
@@ -31,13 +31,15 @@ module.exports = () => {
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
-        name: 'SNIP-IT with JATE',
-        description: 'code snip / text editor app that maintains functionality when offline',
+        name: 'Just Another Text Editor',
+        description: 'code snip / text editor app for not taking with JavaScript syntax highlighting!',
         short_name: 'J.A.T.E.',
         start_url: '/',
         publicPath: '/',
-        background_color: '#31a9e1',
-        theme_color: '#31a9e1',
+        background_color: '#225ca3',
+        theme_color: '#225ca3',
+        orientation: 'portrait',
+        display: 'standalone',
         icons: [
           {
             src: path.resolve('src/images/logo.png'),
