@@ -29,7 +29,7 @@ export const getDb = async () => {
   const result = await request;
   console.log('🛸 Data Retrieved', result);
   // return the data
-  return result;
+  return result?.value;
   };    
 
 // TODO: Add logic to a method that accepts some content and adds it to the database
