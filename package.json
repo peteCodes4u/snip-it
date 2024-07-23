@@ -1,7 +1,7 @@
 {
   "name": "JATE",
   "version": "1.0.0",
-  "description": "",
+  "description": "Progressive web application (PWA) developed for the purpose of capturing notes or code snippets.",
   "main": "server.js",
   "scripts": {
     "start:dev": "concurrently \"cd server && npm run server\" \"cd client && npm run dev\"",
@@ -11,8 +11,11 @@
     "install": "cd server && npm i && cd ../client && npm i",
     "client": "cd client && npm start"
   },
-  "keywords": ["PWA", "webpack"],
-  "author": "",
+  "keywords": [
+    "PWA",
+    "webpack"
+  ],
+  "author": "peteCodes4u",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",

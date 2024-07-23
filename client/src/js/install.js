@@ -20,8 +20,8 @@ butInstall.addEventListener('click', async () => {
 
 // TODO: Add an handler for the `appinstalled` event
 window.addEventListener('appinstalled', (event) => {
-console.log('🎺 snip-it has been installed!');
-alert('🎺 snip-it has been installed successfully!')
+console.log('🎺 JATE has been installed!');
+alert('🎺 JATE has been installed successfully!')
 window.deferredPrompt = null;
 });
 
