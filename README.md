@@ -3,6 +3,8 @@
 ## Description
 Progressive web application (PWA) developed for the purpose of capturing notes or code snippets that supports JavaScript syntax highlighting.
 
+![](./public/images/JATE.png)
+
 ## Table of Contents
 - [Installation Instructions](#Installation-Instructions)
 - [Usage Information](#Usage-Information)
